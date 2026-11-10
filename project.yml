@@ -18,6 +18,8 @@ targets:
       path: WardWords/Info.plist
       properties:
         CFBundleDisplayName: WardWords
+        CFBundleShortVersionString: "1.1.0"
+        CFBundleVersion: "2"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
