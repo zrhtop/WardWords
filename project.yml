@@ -11,9 +11,9 @@ targets:
       - path: WardWords
         excludes:
           - Web
-    resources:
       - path: WardWords/Web
         type: folder
+        buildPhase: resources
     info:
       path: WardWords/Info.plist
       properties:
