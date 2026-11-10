@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <meta name="description" content="WardWords：面向澳洲医院社会工作实习的临床英语情境学习、间隔复习、听力与测试工具。" />
+  <title>WardWords · 临床社工词汇训练</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="WardWords 首页"><span class="brand-symbol"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2.4-5 4.2 10 2.9-6H22"/></svg></span><span class="brand-name">ward<span>words</span><small>CLINICAL ENGLISH LAB</small></span></a>
+      <div class="side-label">LEARN</div>
+      <nav class="side-nav" id="desktop-nav"></nav>
+      <div class="sidebar-bottom">
+        <div class="mini-note"><span class="online-dot"></span><div>你的私人临床词库<small>本机保存 · 可离线使用</small></div></div>
+        <div class="sidebar-foot">Designed for social work students<br/>Independent learning tool · Not affiliated with RAH</div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-breadcrumb"><span class="breadcrumb-mark"></span><span id="breadcrumb">学习概览</span><span class="topbar-slash">/</span><span class="topbar-sub">RAH Complex Surgical</span></div>
+        <div class="topbar-actions"><span class="top-chip" id="top-today"></span><button class="icon-button top-settings" id="open-settings" data-route="settings" aria-label="设置" title="设置"></button></div>
+      </header>
+      <main id="view" class="view" tabindex="-1"></main>
+      <footer class="footer-note">为医院社工实习预习设计 · 词义和临床流程应以督导及所在医院规定为准</footer>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="手机主导航"></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="word-modal" class="word-modal" aria-label="词汇详情"><div id="modal-content"></div></dialog>
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+  <script>if ('serviceWorker' in navigator && location.protocol.startsWith('http')) { window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(()=>{})); }</script>
+</body>
+</html>
