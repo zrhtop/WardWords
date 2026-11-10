@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f6f7fb" />
   <meta name="description" content="WardWords：面向澳洲医院社会工作实习的临床英语情境学习、间隔复习、听力与测试工具。" />
   <title>WardWords · 临床社工词汇训练</title>
+<script>(function(){try{var p=localStorage.getItem('wardwords-theme')||'auto';var d=p==='dark'||(p!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=d?'dark':'light';var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d?'#12142a':'#f6f7fb');}catch(e){document.documentElement.dataset.theme='light';}})();</script>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icon-192.png" />
@@ -27,7 +28,7 @@
     <div class="workspace">
       <header class="topbar">
         <div class="topbar-breadcrumb"><span class="breadcrumb-mark"></span><span id="breadcrumb">学习概览</span><span class="topbar-slash">/</span><span class="topbar-sub">RAH Complex Surgical</span></div>
-        <div class="topbar-actions"><span class="top-chip" id="top-today"></span><button class="icon-button top-settings" id="open-settings" data-route="settings" aria-label="设置" title="设置"></button></div>
+        <div class="topbar-actions"><span class="top-chip" id="top-today"></span><button class="icon-button" id="theme-toggle" data-action="toggle-theme" aria-label="切换日间与夜间模式" title="日间 / 夜间模式"></button><button class="icon-button top-settings" id="open-settings" data-route="settings" aria-label="设置" title="设置"></button></div>
       </header>
       <main id="view" class="view" tabindex="-1"></main>
       <footer class="footer-note">为医院社工实习预习设计 · 词义和临床流程应以督导及所在医院规定为准</footer>
