@@ -40,22 +40,22 @@ jobs:
         run: |
           APP=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name "*.app" | head -1)
           test -n "$APP"
-          rm -rf Payload WardWords-1.0.ipa
+          rm -rf Payload WardWords-1.1.0.ipa
           mkdir Payload
           cp -R "$APP" Payload/
-          zip -qry WardWords-1.0.ipa Payload
-          ls -la WardWords-1.0.ipa
+          zip -qry WardWords-1.1.0.ipa Payload
+          ls -la WardWords-1.1.0.ipa
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
-          name: WardWords-1.0-ipa
-          path: WardWords-1.0.ipa
+          name: WardWords-1.1.0-ipa
+          path: WardWords-1.1.0.ipa
 
       - name: Create GitHub release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            WardWords-1.0.ipa
+            WardWords-1.1.0.ipa
             icon-1024.png
