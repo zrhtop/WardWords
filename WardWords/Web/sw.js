@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wardwords-v1.2';
+const CACHE_NAME = 'wardwords-v1.3';
 const CORE = ['./', './index.html', './style.css', './words.js', './app.js', './icon-192.png', './icon-512.png', './manifest.webmanifest'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting()));

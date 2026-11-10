@@ -18,8 +18,8 @@ targets:
       path: WardWords/Info.plist
       properties:
         CFBundleDisplayName: WardWords
-        CFBundleShortVersionString: "1.1.0"
-        CFBundleVersion: "2"
+        CFBundleShortVersionString: "1.1.1"
+        CFBundleVersion: "3"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
@@ -33,8 +33,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: jp.zrh.wardwords
-        MARKETING_VERSION: "1.1.0"
-        CURRENT_PROJECT_VERSION: "2"
+        MARKETING_VERSION: "1.1.1"
+        CURRENT_PROJECT_VERSION: "3"
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1,2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

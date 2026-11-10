@@ -96,3 +96,8 @@ html[data-theme="dark"] .keyboard{background:#23263e;color:#98a0b5;border-color:
 html[data-theme="dark"] .study-prompt{color:#a79cff}
 html[data-theme="dark"] .finish-symbol{background:#14332a;color:#4cc79f}
 html[data-theme="dark"] .about-note{color:#79819a}
+
+/* ===== Safe area: keep top bar and sidebar clear of the iOS status bar / notch ===== */
+.topbar{height:auto;min-height:calc(75px + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
+.sidebar{padding-top:calc(31px + env(safe-area-inset-top,0px))}
+@media (max-width:780px){.topbar{height:auto;min-height:calc(64px + env(safe-area-inset-top,0px))}}
